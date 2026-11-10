@@ -45,7 +45,8 @@ public class Robo{
     }
 
     public void exibirStatus(){
-        System.out.printf("Status atual\nnome: %s\nid: %d\nbateria: %s\n", nome, id, bateria);
+        System.out.println("------------\nStatus atual\n------------");
+        System.out.printf("nome: %s\nid: %d\nbateria: %s\n", nome, id, bateria);
     }
 
     protected void gastarBateria(int quantidade){
