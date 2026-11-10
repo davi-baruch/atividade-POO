@@ -1,5 +1,6 @@
 package Robo;
 
+import Efeitos.Efeito;
 import Operacoes.ModoOperacao;
 
 public class Robo{
@@ -62,6 +63,13 @@ public class Robo{
     public void ativarModo(ModoOperacao modo){
         if(modo != null){
             gastarBateria(modo.calcularGasto(this));
+            verificarBateria();
+        }
+    }
+
+    public void receberEfeito(Efeito efeito){
+        if(efeito != null){
+            gastarBateria(efeito.aplicarEfeito(this));
             verificarBateria();
         }
     }
