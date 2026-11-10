@@ -6,6 +6,6 @@ public class ModoNormal implements ModoOperacao{
 
     @Override
     public int calcularGasto(Robo robo){
-        return 5;
+        return -5;
     }
 }

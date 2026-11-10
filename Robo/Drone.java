@@ -14,7 +14,7 @@ public class Drone extends Robo{
 
     @Override
     protected void realizarMovimento(){
-        gastarBateria(10);
+        bateria(-10);
         System.out.println("o drone '" + getNome() + "' voou até a altitude máxima de " + getAltitudeMax() + " metros\n");
     }
 }

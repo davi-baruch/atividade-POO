@@ -14,7 +14,7 @@ public class RoboTerrestre extends Robo{
 
     @Override
     protected void realizarMovimento(){
-        gastarBateria(5);
+        bateria(-5);
         System.out.println("o robô terrestre '" + getNome() + "' se moveu com suas " + getRodas() + " rodas\n");
     }
 }

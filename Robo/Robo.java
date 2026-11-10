@@ -50,26 +50,27 @@ public class Robo{
         System.out.printf("nome: %s\nid: %d\nbateria: %s\n", nome, id, bateria);
     }
 
-    protected void gastarBateria(int quantidade){
-        if (quantidade > 0){
-            bateria = bateria - quantidade;
+    protected void bateria(int quantidade){
+        bateria = bateria + quantidade;
 
-            if (bateria < 0){
-                bateria = 0;
-            }
+        if(bateria > 100){
+            bateria = 100;
+        }
+        else if(bateria < 0){
+            bateria = 0;
         }
     }
 
     public void ativarModo(ModoOperacao modo){
         if(modo != null){
-            gastarBateria(modo.calcularGasto(this));
+            bateria(modo.calcularGasto(this));
             verificarBateria();
         }
     }
 
     public void receberEfeito(Efeito efeito){
         if(efeito != null){
-            gastarBateria(efeito.aplicarEfeito(this));
+            bateria(efeito.aplicarEfeito(this));
             verificarBateria();
         }
     }

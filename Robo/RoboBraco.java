@@ -14,7 +14,7 @@ public class RoboBraco extends Robo{
 
     @Override
     protected void realizarMovimento(){
-        gastarBateria(15);
+        bateria(-15);
         System.out.println("o robô braço '" + getNome() + "' se moveu com seu alcance de " + getAlcance() + " metros\n");
     }
 }
