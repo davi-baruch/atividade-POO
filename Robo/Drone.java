@@ -1,7 +1,7 @@
 package Robo;
 
 public class Drone extends Robo{
-    private int altitudeMax;
+    private final int altitudeMax;
 
     public Drone(String nome, int id, int bateria, int altitudeMax){
         super(nome, id, bateria);

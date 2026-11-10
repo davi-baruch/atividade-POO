@@ -1,7 +1,7 @@
 package Robo;
 
 public class RoboBraco extends Robo{
-    private int alcance;
+    private final int alcance;
 
     public RoboBraco(String nome, int id, int bateria, int alcance){
         super(nome, id, bateria);
