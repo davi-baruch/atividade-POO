@@ -1,4 +1,5 @@
 package Operacoes;
+
 import Robo.Robo;
 
 public interface ModoOperacao {
