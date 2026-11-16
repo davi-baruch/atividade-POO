@@ -3,7 +3,7 @@ package Robo;
 import Efeitos.Efeito;
 import Operacoes.ModoOperacao;
 
-public class Robo{
+public abstract class Robo{
     // Estados
     private String nome;
     private int id;
